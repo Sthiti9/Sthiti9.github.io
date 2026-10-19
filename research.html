@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Sthiti Padhi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Sthiti <span>✦</span></a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link active" href="research.html">Research</a>
+    <a class="link" href="cv.html">CV</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="page-head">
+    <h1>Research</h1>
+    <p>Making intelligent systems small enough to run where it matters.</p>
+  </div>
+
+  <section>
+    <h2>Research &amp; Experience</h2>
+
+    <div class="entry" id="thesis">
+      <div class="date">Jan 2026 – Present</div>
+      <div>
+        <h3>Autoencoders for Neural Signal Compression</h3>
+        <div class="where">Master's Thesis · IIT Bombay · Advisor: Prof. Laxmeesha Somappa</div>
+        <ul>
+          <li>Reduced bandwidth by more than 75% at under 10% error by benchmarking DCT, WHT and downsampling on seizure and non-seizure iEEG recordings from the SWEC-ETHZ database (MATLAB)</li>
+          <li>Designed a sparse autoencoder that improves on baseline Walsh-Hadamard Transform compression, then scaled the single-layer design into a two-stage autoencoder that handles channel and temporal mixing separately</li>
+          <li>Used quantization-aware training (QAT) so the model can run on low-power, low-compute on-chip hardware</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="eth">
+      <div class="date">Aug – Dec 2025</div>
+      <div>
+        <h3>Energy-Efficient Ball Towards 360° Vision</h3>
+        <div class="where">ETH Zurich · 10-credit mobility project · Guide: Dr. Phillipp Mayer</div>
+        <p class="lead">Integrating on-board person detection with image capture in a 360° multi-camera ball.</p>
+        <ul>
+          <li>Trained TinyissimoYOLOv8 on a curated person-class COCO subset (320×320 images, exported at 320×256)</li>
+          <li>Applied post-training quantization to fit the model within the tight GAP9 cluster L2 memory</li>
+          <li>Built an end-to-end pipeline from image capture to person detection using dynamic L1/L2 memory sharing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="tubs">
+      <div class="date">May – Jul 2024</div>
+      <div>
+        <h3>Low-Power Multi-Agent Systems for Nanosatellites</h3>
+        <div class="where">Research Intern · TU Braunschweig, Germany · Guide: Prof. Andres Gomez</div>
+        <ul>
+          <li>Developed AgentSpeak and embedded Belief-Desire-Intention (BDI) agent code for nanosatellites in a low-power multi-agent system</li>
+          <li>Integrated agent functions on OpenThread using CoAP in Zephyr RTOS on nRF boards, and co-authored the resulting demonstration accepted at <a href="https://arxiv.org/abs/2601.00465" target="_blank">EUMAS 2024</a></li>
+          <li>Built a VSCode debugging platform on Linux with OpenOCD and Docker for STM32L432 and CC26x2 boards</li>
+          <li>Enabled CoAP communication between two CC26x2 boards through the OpenThread CLI</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="rover">
+      <div class="date">Jan 2023 – Feb 2025</div>
+      <div>
+        <h3>Electronics &amp; Control Subsystem Lead</h3>
+        <div class="where">IIT Bombay Mars Rover Team · Advisor: Prof. P. J. Guruprasad</div>
+        <ul>
+          <li>The team ranked 6th in the International Rover Design Challenge and 12th in the International Rover Challenge</li>
+          <li>Integrated FPV cameras and a Mimosa C5c PTP bridge, and explored LoRa, LPWAN and MIMO for the rover's communication setup</li>
+          <li>Implemented navigation with real-time ArUco marker detection and Canny edge detection using OpenCV</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry" id="morphobot">
+      <div class="date">Jan – Apr 2025</div>
+      <div>
+        <h3>Morphobot: Autotransforming Bot</h3>
+        <div class="where">Electronic Design Lab · Best-Project Award, YUGM 2025</div>
+        <ul>
+          <li>Built a hybrid ground-air robot inspired by Caltech's Morphobot around a single SpeedyBee flight controller coordinating DC, BLDC and servo systems: 3 min flight, 15 min drive, transformation in under 4 s</li>
+          <li>Customized ArduPilot firmware for UAV-to-rover state transitions, controlled through a standard RC transmitter</li>
+          <li>Validated with hardware-in-the-loop and software-in-the-loop (SITL) simulation in Mission Planner</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="zynq">
+      <div class="date">Jan – Apr 2025</div>
+      <div>
+        <h3>Zynq SoC Game</h3>
+        <div class="where">Embedded Systems Design · Course Lab &amp; Project</div>
+        <ul>
+          <li>Developed Python game logic on the ARM processing system of a Zynq SoC, with analog joysticks read via ADC and AXI GPIO</li>
+          <li>Integrated an OpenCV pipeline with triple-buffered VDMA for low-latency 800×600 graphics at 60 FPS</li>
+          <li>Implemented AXI interconnect and the Zynq processor in Xilinx Vivado on a PYNQ-Z2. Also interfaced timers, LEDs and ADC on a TIVA-C</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="heartrate">
+      <div class="date">Aug – Nov 2024</div>
+      <div>
+        <h3>Heart Rate Detection and Display on ESP32</h3>
+        <div class="where">DH307 R&amp;D Project</div>
+        <ul>
+          <li>Established communication between an ESP32 and a display, benchmarking BLE, Bluetooth, Wi-Fi and ESP-NOW</li>
+          <li>Tested a heart-rate algorithm on a MAX30102 PPG sensor using raw IR values</li>
+          <li>Integrated the LVGL GUI library with an ESP32-S3 TFT display to render real-time heart-rate waveforms</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="vlsi">
+      <div class="date">Aug – Nov 2024</div>
+      <div>
+        <h3>CMOS Standard Cells &amp; DWT Architecture</h3>
+        <div class="where">EE671 VLSI Design</div>
+        <ul>
+          <li>Implemented an 8×8 Discrete Wavelet Transform on images in Verilog, followed by RTL synthesis and static timing analysis</li>
+          <li>Designed a 3-input AND gate, an inverter and a negative-edge D flip-flop in the Sky130 PDK using Magic</li>
+          <li>Characterized slack, hold time, and static and dynamic power of the designed blocks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="mri">
+      <div class="date">Aug – Nov 2024</div>
+      <div>
+        <h3>Hybrid Approach for MRI Tissue Segmentation</h3>
+        <div class="where">Wavelets · Course Project</div>
+        <ul>
+          <li>Combined multi-level wavelet CNNs and self-organizing maps in a framework for MRI brain-tissue segmentation</li>
+          <li>Extracted 16 multi-resolution subbands via a 2-level DWT on the IBSR dataset, then clustered the wavelet features with an unsupervised SOM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry" id="cpu">
+      <div class="date">Apr – May 2024</div>
+      <div>
+        <h3>IITB-CPU Processor Design</h3>
+        <div class="where">EE309 Microprocessors · Team of 4</div>
+        <ul>
+          <li>Designed a 16-bit RISC CPU on a Harvard architecture, with 6-stage pipelined and multicycle implementations optimized for CPI</li>
+          <li>Mitigated hazards with data forwarding and minimized data dependencies</li>
+          <li>Designed the datapath, controller and memory system in VHDL using Quartus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">✦ Sthiti Padhi · Last updated October 2026 ✦</div>
+</footer>
+
+</body>
+</html>

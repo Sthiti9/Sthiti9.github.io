@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sthiti Padhi</title>
+<meta name="description" content="Sthiti Padhi — Electrical Engineering, IIT Bombay. Embedded systems for biomedical devices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Sthiti <span>✦</span></a>
+    <a class="link active" href="index.html">Home</a>
+    <a class="link" href="research.html">Research</a>
+    <a class="link" href="cv.html">CV</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <header>
+    <div class="hero">
+      <div class="photo" id="photo">
+        <!-- PHOTO: upload a square-ish picture named photo.jpg next to this file -->
+        <img src="photo.jpg" alt="Photo of Sthiti Padhi" onerror="this.style.display='none'; document.getElementById('photo').classList.add('no-img');">
+        <div class="initials">SP</div>
+        <span class="sparkle" aria-hidden="true">✦</span>
+      </div>
+      <div>
+        <h1>Sthiti Padhi</h1>
+        <p class="tagline">Dual Degree (B.Tech. + M.Tech.) in Electrical Engineering<br>Indian Institute of Technology Bombay</p>
+        <div class="pills">
+          <a class="pill primary" href="cv.pdf" target="_blank">CV (PDF)</a>
+          <a class="pill" href="mailto:sthiti_padhi@iitb.ac.in">Email</a>
+          <a class="pill" href="https://www.linkedin.com/in/sthiti-padhi-49956b264" target="_blank">LinkedIn</a>
+          <a class="pill" href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Hi! I'm a final-year Dual Degree student in Electrical Engineering at IIT Bombay, with a minor from the Centre for Machine Intelligence and Data Science. I work with <strong>Prof. Laxmeesha Somappa</strong> on my Master's thesis, designing quantized autoencoders that compress neural (iEEG) signals for low-power, on-chip execution.</p>
+    <p>I like making intelligent systems small enough to live on a microcontroller. At <strong>ETH Zurich</strong> I fit a person detector onto a GAP9 inside a 360° camera ball. At <strong>TU Braunschweig</strong> I wrote low-power autonomous agents for nanosatellites. At <strong>Google</strong> I worked on kernel threading and on model evaluation. I want to bring this background to biomedical devices that are efficient, wearable and implantable.</p>
+    <div class="interests">
+      <span class="tag">Biomedical devices</span>
+      <span class="tag">Embedded systems</span>
+      <span class="tag">TinyML &amp; model compression</span>
+      <span class="tag">Neural signal processing</span>
+      <span class="tag">Low-power hardware</span>
+    </div>
+    <div class="callout">🌱 I am applying to <strong>PhD programs for Fall 2027</strong>. Please feel free to reach out!</div>
+  </section>
+
+  <section id="research">
+    <h2>Research &amp; Experience</h2>
+    <ul class="oneliners">
+      <li>
+        <a class="t" href="research.html#thesis">Autoencoders for Neural Signal Compression <span class="org">· IIT Bombay</span></a>
+        <span class="d">2026 – Present</span>
+        <span class="desc">Quantized two-stage autoencoder that compresses iEEG by more than 75% for low-power on-chip execution.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#eth">Energy-Efficient Ball Towards 360° Vision <span class="org">· ETH Zurich</span></a>
+        <span class="d">2025</span>
+        <span class="desc">On-board person detection with a quantized TinyissimoYOLOv8 on the GAP9 inside a multi-camera ball.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#tubs">Low-Power Agents for Nanosatellites <span class="org">· TU Braunschweig</span></a>
+        <span class="d">2024</span>
+        <span class="desc">Embedded BDI agents over OpenThread in Zephyr RTOS. This work became a co-authored demo at EUMAS 2024.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#rover">Electronics &amp; Control Subsystem Lead <span class="org">· IIT Bombay Mars Rover Team</span></a>
+        <span class="d">2023 – 2025</span>
+        <span class="desc">Led rover communications and vision-based navigation. The team placed 6th at IRDC and 12th at IRC.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="industry">
+    <h2>Industry</h2>
+    <ul class="oneliners">
+      <li>
+        <span class="t">Software Engineering Intern, Google Cloud <span class="org">· Google India</span></span>
+        <span class="d">Summer 2026</span>
+        <span class="desc">Built an evaluation and calibration framework for a causal-attribution model of user latency.</span>
+      </li>
+      <li>
+        <span class="t">Embedded Software Engineering Intern <span class="org">· Google India</span></span>
+        <span class="d">Summer 2025</span>
+        <span class="desc">Engineered a thread-kill feature with resource recovery in the Little Kernel OS.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="oneliners">
+      <li>
+        <a class="t" href="research.html#morphobot">Morphobot <span class="org">· Best-Project Award, YUGM 2025</span></a>
+        <span class="d">2025</span>
+        <span class="desc">Hybrid ground-air robot that transforms between flying and driving in under 4 seconds.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#zynq">Zynq SoC Game</a>
+        <span class="d">2025</span>
+        <span class="desc">Joystick game on a PYNQ-Z2 FPGA rendering 800×600 graphics at 60 FPS.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#heartrate">Heart Rate Detection on ESP32</a>
+        <span class="d">2024</span>
+        <span class="desc">PPG heart-rate sensing with live waveforms on a wireless ESP32-S3 display.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#vlsi">CMOS Standard Cells &amp; DWT Architecture</a>
+        <span class="d">2024</span>
+        <span class="desc">8×8 wavelet transform in Verilog, plus custom standard cells in the Sky130 PDK.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#mri">MRI Tissue Segmentation</a>
+        <span class="d">2024</span>
+        <span class="desc">Wavelet CNN features with self-organizing maps for unsupervised brain-tissue segmentation.</span>
+      </li>
+      <li>
+        <a class="t" href="research.html#cpu">IITB-CPU</a>
+        <span class="d">2024</span>
+        <span class="desc">16-bit pipelined RISC processor in VHDL with hazard handling.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publication</h2>
+    <div class="pub">
+      <div class="title">Space Debris Removal using Nano-Satellites controlled by Low-Power Autonomous Agents</div>
+      D. Christmann, J. F. Gutierrez, <span class="me">S. Padhi</span>, P. Plörer, A. Takur, S. Silvestri, and A. Gomez<br>
+      <span class="venue">European Conference on Multi-Agent Systems (EUMAS), Demo Track, 2024</span>
+      <div class="links"><a href="https://arxiv.org/abs/2601.00465" target="_blank">arXiv</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">✦ Sthiti Padhi · Last updated October 2026 ✦</div>
+</footer>
+
+</body>
+</html>
